@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos do menu no rodapé */
+        .footer-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        /* Estilos do menu no topo */
+        .header-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        /* Estilos da imagem do logo */
+        .logo {
+            max-width: 10%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        /* Estilos dos links do menu */
+        .menu-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu-links li {
+            margin: 0 10px;
+        }
+
+        .menu-links a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+	<title>Informações do Computador</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="menu" class="footer-menu">
+            <ul class="menu-links">
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Produtos</a></li>
+            </ul>
+            <img src="logo.png" alt="Logo" class="logo">
+            <ul class="menu-links">
+                                <li><a href="#">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Informações do Computador</h1>
+    <button onclick="exibirInformacoes()">Exibir Informações</button>
+
+    <div id="informacoes"></div>
+
+    <script>
+        function exibirInformacoes() {
+            var informacoesDiv = document.getElementById('informacoes');
+
+            // Informações sobre a memória
+            var memoria = navigator.deviceMemory;
+            informacoesDiv.innerHTML += '<p>Memória: ' + memoria + ' GB</p>';
+
+            // Informações sobre o processador
+            var processador = navigator.hardwareConcurrency;
+            informacoesDiv.innerHTML += '<p>Processador: ' + processador + ' núcleos</p>';
+
+            // Informações sobre a placa de vídeo (usando Three.js)
+            var renderer = new THREE.WebGLRenderer();
+            var gl = renderer.getContext('webgl') || renderer.getContext('experimental-webgl');
+            if (gl) {
+                var extension = gl.getExtension('WEBGL_debug_renderer_info');
+                if (extension) {
+                    var vendor = gl.getParameter(extension.UNMASKED_VENDOR_WEBGL);
+                    var modelo = gl.getParameter(extension.UNMASKED_RENDERER_WEBGL);
+                    informacoesDiv.innerHTML += '<p>Fabricante da Placa de Vídeo: ' + vendor + '</p>';
+                    informacoesDiv.innerHTML += '<p>Modelo da Placa de Vídeo: ' + modelo + '</p>';
+                }
+            }
+        }
+
+        // Função para verificar o tamanho da tela e alternar entre os layouts
+        function checkScreenSize() {
+            var menu = document.getElementById('menu');
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            if (screenWidth < 769) {
+                // Layout do menu no rodapé
+                menu.classList.remove('header-menu');
+                menu.classList.add('footer-menu');
+            } else {
+                // Layout do menu no topo
+                menu.classList.remove('footer-menu');
+                menu.classList.add('header-menu');
+            }
+        }
+
+        // Chama a função quando a página é carregada e quando a tela é redimensionada
+        window.addEventListener('DOMContentLoaded', checkScreenSize);
+        window.addEventListener('resize', checkScreenSize);
+		informacoesDiv.innerHTML += '<p>Resolução da tela quando abriu o browser: ' + DOMContentLoaded + '</p>';
+		informacoesDiv.innerHTML += '<p>Resolução da tela modificada durante o uso: ' + resize + '</p>';
+    </script>
+</body>
+</html>
