@@ -19,7 +19,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color:rgb(124, 157, 228);
+    background-color:rgb(153, 148, 255, 0.4378);
     border-radius: 25px;
     font-size:larger;
   }
@@ -59,13 +59,13 @@ header {
   }
   
   .green-bg {
-    background-color: rgb(221, 230, 221);
+    background-color: rgb(212, 171, 239, 0.11);
     color: rgb(4, 4, 4);
     border-radius: 25px;
   }
   
   .blue-bg {
-    background-color: rgb(221, 230, 221);
+    background-color: rgb(212, 171, 239, 0.11);
     color: rgb(1, 1, 1);
     border-radius: 25px;
   }

@@ -3,7 +3,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color:rgb(124, 157, 228);
+    background-color:rgba(153, 148, 255, 0.437);
     border-radius: 25px;
     font-size:larger;
   }
@@ -34,7 +34,7 @@ header {
   nav li {
     display: inline;
     margin-right: 10px;
-    color: #000;
+    color: #0b0a0a;
   }
   
   nav a {
@@ -43,13 +43,13 @@ header {
   }
   
   .green-bg {
-    background-color: rgb(221, 230, 221);
+    background-color: rgba(212, 171, 239, 0.17);
     color: rgb(4, 4, 4);
     border-radius: 25px;
   }
   
   .blue-bg {
-    background-color: rgb(221, 230, 221);
+    background-color: rgba(212, 171, 239, 0.11);
     color: rgb(1, 1, 1);
     border-radius: 25px;
   }
@@ -68,9 +68,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1px;
-    background-color:rgb(124, 157, 228);
-    border-radius: 25px;
+    padding: -10px;
+    background-color:rgba(204, 131, 243, 0.356);
     font-size:larger;
 
   }
