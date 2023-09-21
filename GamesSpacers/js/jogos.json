@@ -1,0 +1,52 @@
+
+
+
+[
+  {
+    "nome": "God of War",
+    "categoria": "Ação",
+    "imagem": 
+    "classificação": "M"
+  },
+  {
+    "nome": "The Legend of Zelda: Breath of the Wild",
+    "categoria": "Aventura",
+    "classificação": "E10+"
+  },
+  {
+    "nome": "Grand Theft Auto V",
+    "categoria": "Ação",
+    "classificação": "M"
+  },
+  {
+    "nome": "Minecraft",
+    "categoria": "Sobrevivência",
+    "classificação": "E"
+  },
+  {
+    "nome": "Super Mario Odyssey",
+    "categoria": "Plataforma",
+    "classificação": "E"
+  },
+  {
+    "nome": "Red Dead Redemption 2",
+    "categoria": "Ação",
+    "classificação": "M"
+  },
+  {
+    "nome": "The Witcher 3: Wild Hunt",
+    "categoria": "RPG",
+    "classificação": "M"
+  },
+  {
+    "nome": "Horizon Zero Dawn",
+    "categoria": "Ação",
+    "classificação": "M"
+  },
+  {
+    "nome": "Spider-Man",
+    "categoria": "Ação",
+    "classificação": "T"
+  }
+
+]
