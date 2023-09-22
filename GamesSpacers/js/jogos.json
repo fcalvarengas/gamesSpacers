@@ -1,11 +1,7 @@
-
-
-
 [
   {
     "nome": "God of War",
     "categoria": "Ação",
-    "imagem": 
     "classificação": "M"
   },
   {
@@ -16,6 +12,7 @@
   {
     "nome": "Grand Theft Auto V",
     "categoria": "Ação",
+    "imagem": "../imgjogos/gta.jpg",
     "classificação": "M"
   },
   {
