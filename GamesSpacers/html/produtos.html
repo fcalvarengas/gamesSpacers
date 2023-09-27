@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/GamesSpacers/css/jogos.css">
+</head>
+<body>
+
+   
+        <div class="container" id="jogos-container">
+        </div>
+    
+    
+        <script>
+            function carregar() {
+                fetch('../js/jogos.json')
+                    .then(response => response.json())
+                    .then(jogos => {
+                        container = document.querySelector("#jogos-container")
+    
+                        jogos.map(jogo => {
+                            const card = document.createElement("div")
+                            card.classList.add("card")
+    
+                            const img = document.createElement("img");
+                            img.src = jogo.imagem || 'imagem-padrao.jpg';
+                            img.alt = jogo.nome
+    
+    
+                            const titulo = document.createElement("h3")
+                            titulo.textContent = jogo.nome
+    
+                            })
+                            card.appendChild(img)
+                            card.appendChild(titulo)
+                            console.log(card);
+                            container.appendChild(card)
+    
+                        })
+
+                    
+        }
+
+        carregar()
+    </script>
+</body>
+</html>
+
+
+
+    <!-- <div class="container"></div>
+<div class="card">
+<img src="/imgjogos/valorant.jpg" alt="">
+<h3>Valorant</h3>
+<p>Valor: R$</p>
+</div>
+    
+<div class="container"></div>
+<div class="card">
+<img src="/imgjogos/valorant.jpg" alt="">
+<h3>Valorant</h3>
+</div>
+    
+<div class="container"></div>
+<div class="card">
+<img src="/imgjogos/valorant.jpg" alt="">
+<h3>Valorant</h3>
+</div>
+    
+<div class="container"></div>
+<div class="card">
+<img src="/imgjogos/valorant.jpg" alt="">
+<h3>Valorant</h3>
+</div>
+    
+<div class="container"></div>
+<div class="card">
+<img src="/imgjogos/valorant.jpg" alt="">
+<h3>Valorant</h3>
+</div>
+    
+<div class="container"></div>
+<div class="card">
+<img src="/imgjogos/valorant.jpg" alt="">
+<h3>Valorant</h3>
+</div>
+    
+<div class="container"></div>
+<div class="card">
+<img src="/imgjogos/valorant.jpg" alt="">
+<h3>Valorant</h3>
+</div>
+    
+<div class="container"></div>
+<div class="card">
+<img src="/imgjogos/valorant.jpg" alt="">
+<h3>Valorant</h3>
+</div>
+    
+<div class="container"></div>
+<div class="card">
+<img src="/imgjogos/valorant.jpg" alt="">
+<h3>Valorant</h3>
+</div>
+    
+<div class="container"></div>
+<div class="card">
+<img src="/imgjogos/valorant.jpg" alt="">
+<h3>Valorant</h3>
+</div>
+    
+<div class="container"></div>
+<div class="card">
+<img src="/imgjogos/valorant.jpg" alt="">
+<h3>Valorant</h3>
+</div>
+    
+    
+</body>
+</html> -->

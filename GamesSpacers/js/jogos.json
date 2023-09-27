@@ -3,50 +3,37 @@
 
 [
   {
-    "nome": "God of War",
-    "categoria": "Ação",
-    "imagem": 
-    "classificação": "M"
-  },
-  {
-    "nome": "The Legend of Zelda: Breath of the Wild",
-    "categoria": "Aventura",
-    "classificação": "E10+"
-  },
-  {
     "nome": "Grand Theft Auto V",
     "categoria": "Ação",
+    "imagem": "../imgjogos/gta.jpg",
     "classificação": "M"
   },
-  {
-    "nome": "Minecraft",
-    "categoria": "Sobrevivência",
-    "classificação": "E"
-  },
-  {
-    "nome": "Super Mario Odyssey",
-    "categoria": "Plataforma",
-    "classificação": "E"
-  },
-  {
-    "nome": "Red Dead Redemption 2",
-    "categoria": "Ação",
-    "classificação": "M"
-  },
-  {
-    "nome": "The Witcher 3: Wild Hunt",
-    "categoria": "RPG",
-    "classificação": "M"
-  },
-  {
-    "nome": "Horizon Zero Dawn",
-    "categoria": "Ação",
-    "classificação": "M"
-  },
-  {
-    "nome": "Spider-Man",
-    "categoria": "Ação",
-    "classificação": "T"
-  }
 
+  {
+    "nome": "Call Of Duty",
+    "categoria": "Ação",
+    "imagem": "../imgjogos/callof.jpg",
+    "classificação": "M"
+  },
+
+  {
+    "nome": "Callisto",
+    "categoria": "Ação",
+    "imagem": "../imgjogos/callisto.jpg",
+    "classificação": "M"
+  },
+
+  {
+    "nome": "Fable",
+    "categoria": "Ação",
+    "imagem": "../imgjogos/fable.jpg",
+    "classificação": "M"
+  },
+
+  {
+    "nome": "Prey",
+    "categoria": "Ação",
+    "imagem": "../imgjogos/prey.jpg",
+    "classificação": "M"
+  }
 ]
