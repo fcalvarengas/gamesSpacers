@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+        
 <html lang="pt-br">
 
 <head>
@@ -15,17 +15,54 @@
     <div class="container" id="jogos-container">
     </div>
 
+        <div class="card">
+          <img src="/imgjogos/marvel.jpg" alt="Imagem do card">
+          <h2>marvel</h2>
+          <p>Valor:65,00</p>
+          <button>Comprar</button>
 
-    <script>
-        function carregar() {
-            fetch('../js/jogos.json')
-                .then(response => response.json())
-                .then(jogos => {
-                    container = document.querySelector("#jogos-container")
-                    
-                    jogos.map(jogo => {
-                        const card = document.createElement("div")
-                        card.classList.add("card")
+          <div class="card">
+            <img src="/imgjogos/marvel.jpg" alt="Imagem do card">
+            <h2>marvel</h2>
+            <p>Valor:65,00</p>
+            <button>Comprar</button
+
+     class="container" id="jogos-container">
+        <div class="card">
+            <img src="/imgjogos/hogleg.jpg" alt="">
+            <h3>Hogwarts Legacy</h3>
+            <h4>Valor: R$250,00</h4>
+            <button>Ação</button>
+             
+             <div class="container" id="jogos-container">
+                <div class="card">
+                    <img src="/imgjogos/callfof.jpg" alt="">
+                    <h3>Call Of Dutty</h3>
+                     
+
+
+                     <div class="container" id="jogos-container">
+                        <div class="card">
+                            <img src="/imgjogos/witcher.jpg" alt="">
+                            <h3>The Witcher</h3>
+                            
+
+
+                            
+                                                     
+                                                   
+                                                     
+                                                    </div>
+             <!-- <script>
+                function carregar(){
+                    fetch('jogos.json')
+                    .then(response => response.json())
+                    .then(jogos => {
+                        const container = document.querySelector("#jogos-container")
+
+                        jogos.map(jogo => {
+                            const card = document.createElement("div")
+                            card.classList.add("card")
 
                         const img = document.createElement("img");
                         // Esta faltando o atributo imagem em cada elemento do Json
@@ -37,12 +74,13 @@
                         const titulo = document.createElement("h3")
                         titulo.textContent = jogo.nome
 
-                        card.appendChild(img)
-                        card.appendChild(titulo)
-                        console.log(card);
-                        container.appendChild(card)
+                            card.appendChild(img)
+                            card.appendChild(titulo)
+                            container.appendChild(card)
+                        
 
-                    })
+
+                        })
 
                 })
         }
